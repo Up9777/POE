@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspirational Personalities</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Inspirational Indian Personalities</h1>
+        <div class="personality-list">
+            <div class="personality" onclick="showQuotes('personality1')">
+                <img src="images/Personality-1.jpeg" alt="Personality 1">
+                <h2>Mahatma Gandhi</h2>
+            </div>
+            <div class="personality" onclick="showQuotes('personality2')">
+                <img src="images/Personality-2.jpeg" alt="Personality 2">
+                <h2>Sardar Vallabhbhai Patel</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="quote-modal" id="quoteModal">
+        <div class="quote-content">
+            <span class="close" onclick="closeModal()">×</span>
+            <h2 id="personalityName"></h2>
+            <ul id="quotesList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
